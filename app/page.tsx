@@ -3,9 +3,9 @@
 import { useState } from "react";
 
 export default function Preferences() {
-  let [language, setLanguage] = useState("English");
-  let [theme, setTheme] = useState("Light");
-  let [accent, setAccent] = useState("purple");
+  const [language, setLanguage] = useState("English");
+  const [theme, setTheme] = useState("Light");
+  const [accent, setAccent] = useState("purple");
 
   return (
     <div className="max-w-md mx-auto mt-10 p-6 rounded-2xl shadow-lg bg-white">
@@ -16,7 +16,6 @@ export default function Preferences() {
       </p>
       <hr className="mb-4 border-gray-200" />
 
-      
       <div className="mb-4">
         <label className="text-sm font-medium">Language</label>
         <p className="text-xs text-gray-500 mb-2">
@@ -34,7 +33,7 @@ export default function Preferences() {
       </div>
       <hr className="mb-4 border-gray-200" />
 
-    
+      
       <div className="mb-4">
         <label className="text-sm font-medium">Interface theme</label>
         <p className="text-xs text-gray-500 mb-2">
@@ -59,7 +58,7 @@ export default function Preferences() {
       </div>
       <hr className="mb-4 border-gray-200" />
 
-    
+     
       <div className="mb-4 flex items-center justify-between">
         <div>
           <p className="text-sm font-medium">Accent color</p>
@@ -82,7 +81,6 @@ export default function Preferences() {
       </div>
       <hr className="mb-4 border-gray-200" />
 
-      
       <div className="flex flex-col gap-6">
         <div className="flex items-center justify-between">
           <span className="text-sm">✨ Reduce motion</span>
@@ -109,7 +107,7 @@ export default function Preferences() {
       </div>
       <hr className="my-6 border-gray-200" />
 
-    
+   
       <div className="flex justify-between items-center">
         <button className="text-sm text-gray-500">Reset to default</button>
         <div className="flex gap-2">
